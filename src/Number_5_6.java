@@ -2,9 +2,9 @@ public class Number_5_6 {
     static final String fullName = "ivanov ivan ivanovich";
 
     public static void main(String[] args) {
-        String lastName = fullName.substring(0, fullName.indexOf(' ')).replace(" ", "");
-        String firstName = fullName.substring(fullName.indexOf(' '), fullName.lastIndexOf(' ')).replace(" ", "");
-        String middleName = fullName.substring(fullName.lastIndexOf(' ')).replace(" ", "");
+        String lastName = fullName.substring(0, fullName.indexOf(' ')).trim();
+        String firstName = fullName.substring(fullName.indexOf(' '), fullName.lastIndexOf(' ')).trim();
+        String middleName = fullName.substring(fullName.lastIndexOf(' ')).trim();
         System.out.println("Имя сотрудника - " + firstName);
         System.out.println("Фамилия сотрудника - " + lastName);
         System.out.println("Отчество сотрудника - " + middleName);
